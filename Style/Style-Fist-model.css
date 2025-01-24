@@ -1,0 +1,118 @@
+:root{
+    --color-line:#099;
+    --color-to-opacity:rgba(0,0,0,0.6);
+    --width-side:calc(100% - 100px );
+}
+
+*{
+    margin: 0  ;
+    padding: 0  ;
+    color:var(--color-line);
+    scroll-behavior: smooth;
+}
+
+span{
+    color: inherit;
+    background-color: inherit;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+} 
+
+
+.container .nav .main div a.content-main:hover,
+.container .nav .main div .active ,
+.container .nav .main div a.content-main:hover i ,
+a:active{
+    background-color:var(--color-line);
+    color:white;
+    transition: all 0.3s ease;
+}
+
+ /* this is temporary   */
+body{
+    background-color: rgb(189, 156, 156);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+div.container{
+    padding: 25px;
+}
+
+/* ======================================
+            NAV
+ ======================================== */
+.container .nav{
+    max-width:500px;
+    min-width: 400px;
+    padding: 10px;
+}
+
+.container .nav .nav-cont {
+    background-color: white;
+    padding: 60px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: lighter;        
+}
+
+.container .nav .header h2 {
+    font-style: italic;
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+    font-weight:bold;
+    text-align: center;
+    font-weight: lighter;        
+}
+
+.container .nav .main{
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    flex-wrap: nowrap;   
+}
+
+
+.container .nav .main div a.content-main {
+    padding: 40px 30px;
+    margin: 10px 0;
+    width: 75% ;
+}   
+.container .nav .main div .content-main span {
+    margin: 0 20px;
+}   
+
+/* 
+=====================================================
+                for section drink menu
+===================================================== */
+
+.container .main .nav{
+    width: calc(100% - 50px );
+    height: 50px;
+    background-color: var(--color-to-opacity);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: 20px 0;
+}
+.container .main .describe-content-coffee .item-one{
+    display: flex;
+    flex: 30% 70%;
+}
+.container .main .describe-content-coffee .item-one .image {
+    width:30%;
+}
+
+.container .main .describe-content-coffee .item-one .describe-item {
+    width: 70%;
+}
+
+.container .main .describe-content-coffee .item-one img {
+    padding: 20px;
+}
